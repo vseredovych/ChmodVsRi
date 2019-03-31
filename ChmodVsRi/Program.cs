@@ -10,7 +10,11 @@ namespace ChmodVsRi
     {
         static void Main(string[] args)
         {
-            Console.Write("test");
+            //Console.Write("test");
+            CommandHandler handler = new CommandHandler();
+            handler.ReadCommand();
+
+            Console.Read();
         }
     }
 }
