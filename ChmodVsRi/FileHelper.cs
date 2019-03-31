@@ -27,7 +27,7 @@ namespace ChmodVsRi
 
             foreach (FileInfo fileInfo in Files)
             {
-                File newFile = new File(fileInfo, new Rights());
+                File newFile = new File(fileInfo);
                 repo.AddToRepository(newFile);
             }
         }

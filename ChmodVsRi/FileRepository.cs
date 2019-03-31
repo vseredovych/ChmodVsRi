@@ -26,5 +26,33 @@ namespace ChmodVsRi
             }
             return names.ToArray();
         }
+        public string[] getFileNamesAndRights()
+        {
+            List<string> names = new List<string>();
+            foreach (File el in files)
+            {
+                names.Add(el.fileInfo.Name + " " + el.ownerRights.read + " " + el.ownerRights.write + " " + el.ownerRights.execute);
+            }
+            return names.ToArray();
+        }
+        public int isFileExist(string name)
+        {
+            for (int i = 0; i < files.Count; i++)
+            {
+                if (files[i].fileInfo.Name == name)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        public File getFileByName(string name)
+        {
+            if (isFileExist(name) != -1)
+            {
+                return files[isFileExist(name)];
+            }
+            return null;
+        }
     }
 }

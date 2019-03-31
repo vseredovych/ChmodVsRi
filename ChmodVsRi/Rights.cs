@@ -14,9 +14,14 @@ namespace ChmodVsRi
 
         public Rights()
         {
-            read = true;
-            write = true;
-            execute = true;
+            read = false;
+            write = false;
+            execute = false;
+        }
+        public string getRightString()
+        {
+
+            return "";
         }
     }
 }
