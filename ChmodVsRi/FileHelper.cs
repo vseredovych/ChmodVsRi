@@ -19,7 +19,6 @@ namespace ChmodVsRi
             {
                 Directory.CreateDirectory(workDirectoryName);
             }
-            Console.WriteLine(workDirectoryPath);
         }
         public void FileFillRepository(FileRepository repo)
         {
