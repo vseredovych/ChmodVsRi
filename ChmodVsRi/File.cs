@@ -28,5 +28,13 @@ namespace ChmodVsRi
             this.groupRights = groupRights;
             this.otherRights = otherRights;
         }
+        public string getRightsString()
+        {
+            string str = "-";
+            str += ownerRights.getRightsString();
+            str += groupRights.getRightsString();
+            str += otherRights.getRightsString();
+            return str;
+        }
     }
 }

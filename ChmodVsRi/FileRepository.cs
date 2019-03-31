@@ -31,7 +31,7 @@ namespace ChmodVsRi
             List<string> names = new List<string>();
             foreach (File el in files)
             {
-                names.Add(el.fileInfo.Name + " " + el.ownerRights.read + " " + el.ownerRights.write + " " + el.ownerRights.execute);
+                names.Add(el.fileInfo.Name + "\t" + el.getRightsString());
             }
             return names.ToArray();
         }

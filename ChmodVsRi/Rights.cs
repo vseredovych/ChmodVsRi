@@ -18,10 +18,24 @@ namespace ChmodVsRi
             write = false;
             execute = false;
         }
-        public string getRightString()
+        public string getRightsString()
         {
+            string str = "";
+            if (read == true)
+                str += "r";
+            else
+                str += "-";
 
-            return "";
+            if (write == true)
+                str += "w";
+            else
+                str += "-";
+
+            if (execute == true)
+                str += "x";
+            else
+                str += "-";
+            return str;
         }
     }
 }
