@@ -10,11 +10,14 @@ namespace ChmodVsRi
 {
     class CommandHandler
     {
-        FileHelper fileHelper;
-
-        CommandHandler()
+        private FileHelper fileHelper;
+        private FileRepository repo;
+        public CommandHandler()
         {
             fileHelper = new FileHelper();
+
+            repo = new FileRepository();
+            fileHelper.FileFillRepository(repo);
         }
         public void ReadCommand()
         {
@@ -30,12 +33,22 @@ namespace ChmodVsRi
                     CommandPwd();
                     break;
                 case "ls":
+                    CommandLs();
+                    break;
+
 
             }
         }
         void CommandPwd()
         {
-            Console.WriteLine(fileHelper.getWorkDirectory());          
+            Console.WriteLine(fileHelper.getDirectoryName());          
+        }
+        void CommandLs()
+        {
+            foreach(string el in repo.getFileNames())
+            {
+                Console.WriteLine(el);
+            }
         }
 
     }

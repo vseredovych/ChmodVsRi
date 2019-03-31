@@ -11,5 +11,12 @@ namespace ChmodVsRi
         public bool read { get; set; }
         public bool write { get; set; }
         public bool execute { get; set; }
+
+        public Rights()
+        {
+            read = true;
+            write = true;
+            execute = true;
+        }
     }
 }

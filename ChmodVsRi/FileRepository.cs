@@ -8,10 +8,23 @@ namespace ChmodVsRi
 {
     class FileRepository
     {
-        List<TxtFile> file;
-        FileRepository()
+        List<File> files;
+        public FileRepository()
         { 
-            file = new List<TxtFile>();
+            files = new List<File>();
+        }
+        public void AddToRepository(File file)
+        {
+            files.Add(file);
+        }
+        public string[] getFileNames()
+        {
+            List<string> names = new List<string>();
+            foreach (File el in files)
+            {
+                names.Add(el.fileInfo.Name);
+            }
+            return names.ToArray();
         }
     }
 }
