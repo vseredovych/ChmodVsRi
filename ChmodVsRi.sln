@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChmodVsRi", "ChmodVsRi\ChmodVsRi.csproj", "{E4A5F70A-86E6-41E6-93D5-E9DA3B336ECE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4A5F70A-86E6-41E6-93D5-E9DA3B336ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A5F70A-86E6-41E6-93D5-E9DA3B336ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4A5F70A-86E6-41E6-93D5-E9DA3B336ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4A5F70A-86E6-41E6-93D5-E9DA3B336ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C81FA47-A57E-4622-A212-C9ABD5D089F6}
+	EndGlobalSection
+EndGlobal
