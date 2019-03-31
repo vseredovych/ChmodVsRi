@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Utilities\Chmod.cs" />
     <Compile Include="CommandHandler.cs" />
     <Compile Include="Rights.cs" />
     <Compile Include="File.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="FileRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Ls.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
