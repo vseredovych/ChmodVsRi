@@ -20,17 +20,17 @@ namespace ChmodVsRi
                 Directory.CreateDirectory(workDirectoryName);
             }
         }
-        public void FileFillRepository(FileRepository repo)
-        {
-            DirectoryInfo dir = new DirectoryInfo(workDirectoryPath + workDirectoryName);
-            FileInfo[] Files = dir.GetFiles("*.txt");
+        //public void FileFillRepository(FileRepository repo)
+        //{
+        //    DirectoryInfo dir = new DirectoryInfo(workDirectoryPath + workDirectoryName);
+        //    FileInfo[] Files = dir.GetFiles("*.txt");
 
-            foreach (FileInfo fileInfo in Files)
-            {
-                File newFile = new File(fileInfo);
-                repo.AddToRepository(newFile);
-            }
-        }
+        //    foreach (FileInfo fileInfo in Files)
+        //    {
+        //        File newFile = new File(fileInfo);
+        //        repo.AddToRepository(newFile);
+        //    }
+        //}
 
         public string getDirectoryPath()
         {
