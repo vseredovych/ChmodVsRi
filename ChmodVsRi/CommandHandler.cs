@@ -17,11 +17,13 @@ namespace ChmodVsRi
 
         private Chmod chmod;
         private Ls ls;
+        private Touch touch;
 
         public CommandHandler()
         {
             chmod = new Chmod();
             ls = new Ls();
+            touch = new Touch();
 
             fileHelper = new FileHelper();
             repository = new FileRepository();
@@ -50,6 +52,9 @@ namespace ChmodVsRi
         {
             switch (command)
             {
+                case "touch":
+                    touch.CommandTouch(parameters, repository);
+                    break;
                 case "pwd":
                     CommandPwd();
                     break;
