@@ -13,6 +13,10 @@ namespace ChmodVsRi
         { 
             files = new List<File>(); //lul
         }
+        public void DeleteFile(File file)
+        {
+            files.Remove(file);
+        }
         public void AddToRepository(File file)
         {
             files.Add(file);

@@ -52,6 +52,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Ls.cs" />
+    <Compile Include="Utilities\Rm.cs" />
     <Compile Include="Utilities\Touch.cs" />
   </ItemGroup>
   <ItemGroup>
